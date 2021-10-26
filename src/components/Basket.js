@@ -56,10 +56,6 @@ class Basket extends Component {
                                 }
                                 <tfoot>
                                     <tr>
-                                        <th colspan="4" class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-right text-white text-2xl">Total excl. VAT</th>
-                                        <th class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg  text-right text-white text-2xl">€ {this.handleTotalPrice()-(2.79+2.18)}</th>
-                                    </tr>
-                                    <tr>
                                         <th colspan="4" class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-right text-white text-2xl">VAT 10%</th>
                                         <th class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-right text-white text-2xl">€ 2.79</th>
                                     </tr>
