@@ -5,8 +5,6 @@ The application has three pages Products, Cart and Order.
 * Cart: Display products in the shopping cart. After clicking send order button, customers are redirected to the order page and shopping cart will become empty
 * Order: Display a thank you message and summary of the order
 
-# Online-Store
-
 This project was generated using `npx create-react-app` command (version 17.0.2).
 
 ## Development server
