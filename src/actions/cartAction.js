@@ -1,5 +1,6 @@
 import { ADD_TO_CART, REMOVE_FROM_CART, CLEAR_CART } from "./types";
 
+// Product is added to cart by dispatch of ADD_TO_CART action
 export const addToCart = (items, product) => (dispatch) => {
   const cartItems = items.slice();
   let productAlreadyIn = false;
@@ -21,6 +22,7 @@ export const addToCart = (items, product) => (dispatch) => {
   )
 }
 
+// Product is removed from the cart by dispatch of REMOVE_FROM_CART action
 export const removeFromCart = (items, product) => (dispatch) => {
   const cartItems = items.slice().filter(element => element.id !== product.id);
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
@@ -33,6 +35,7 @@ export const removeFromCart = (items, product) => (dispatch) => {
     })
 }
 
+// Cart becomes empty after placing an order
 export const clearCart = () => (dispatch) => {
   localStorage.clear();
   return dispatch({
