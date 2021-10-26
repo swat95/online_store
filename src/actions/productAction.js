@@ -2,6 +2,7 @@ import { FETCH_PRODUCTS } from '../actions/types';
 import { ORDER_PRODUCTS_BY_PRICE } from '../actions/types';
 import data from '../model/products.json';
 
+// Products are fetched dynamically from products.json file
 export const fetchProducts = () => (dispatch) => {
   return dispatch({ type: FETCH_PRODUCTS, payload: data });
 }
